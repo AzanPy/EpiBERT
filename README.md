@@ -1,9 +1,7 @@
 ## EpiBERT
 <img src="docs/graphical_abstract.png" width="400">
 
-**EpiBERT** learns representations of accessible sequence that generalize across cell types via "masked accessibility modeling" which can be used for downstream fine-tuning tasks, such as caQTL predictions and RAMPAGE-seq prediction in new cell types. [Link to manuscript](https://www.cell.com/cell-genomics/fulltext/S2666-979X(25)00018-7)
-
-If you use EpiBERT or the code in this repository please cite Javed, N.<sup>\*</sup>, Weingarten, T.<sup>\*</sup>, Sehanobish, A., Roberts, A., Dubey, A., Choromanski, K., and Bernstein, B.E. (2025). A multi-modal transformer for cell type-agnostic regulatory predictions. Cell Genom. 5, 100762. DOI: 10.1016/j.xgen.2025.100762. 
+EpiBERT learns representations of accessible sequence that generalize across cell types via "masked accessibility modeling" which can be used for downstream fine-tuning tasks, such as caQTL predictions and RAMPAGE-seq prediction in new cell types. [Link to manuscript](https://www.cell.com/cell-genomics/fulltext/S2666-979X(25)00018-7)
 
 ### Installation
 This repository depends on Python 3 and Tensorflow. See all requirements which you can see and install via requirements.txt for pip. For ease you can clone this repository and run set pip install -e .
@@ -76,7 +74,20 @@ For pre-training(masked atac prediction, _atac suffix files):
 
 Files for fine-tuning for RAMPAGE prediction follow a similar structure
 
+### Citation
+If you use EpiBERT or this repository, please cite:
+@article{javed2025epibert,
+  title={A multi-modal transformer for cell type-agnostic regulatory predictions},
+  author={Javed, N. and Weingarten, T. and Sehanobish, A. and Roberts, A. and Dubey, A. and Choromanski, K. and Bernstein, B.E.},
+  journal={Cell Genomics},
+  volume={5},
+  pages={100762},
+  year={2025},
+  doi={10.1016/j.xgen.2025.100762}
+}
 
+### Contact 
+Please create an issue above or email nauman.javed48@gmail.com 
 
 
 

@@ -219,7 +219,7 @@ def noncausal_denominator(qs, ks):
   Returns:
     FAVOR normalizer in noncausal attention.
     """
-    all_ones = tf.ones([ks.shape[0]], dtype=tf.bfloat16)
+    all_ones = tf.ones([ks.shape[0]], dtype=ks.dtype)
     ks_sum = tf.einsum("lbhm,l->bhm", ks, all_ones)
     return tf.einsum("lbhm,bhm->lbh", qs, ks_sum)
 
